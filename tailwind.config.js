@@ -3,7 +3,7 @@ export default {
   theme: {
     extend: {},
     fontFamily: {
-      madimi: ["Exo2"],
+      karla: ["Karla"],
     },
   },
   plugins: [],
