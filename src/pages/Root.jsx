@@ -9,9 +9,9 @@ const items = [
 ];
 export default function Root() {
   return (
-    <div className="w-screen min-h-screen flex justify-center">
-      <div className="border-2 w-full max-w-screen-2xl flex flex-col items-center">
-        <div className="mt-20 flex flex-col items-center">
+    <div className="w-screen min-h-screen flex justify-center font-madimi">
+      <div className="w-full flex flex-col items-center">
+        <div className="mt-20 flex flex-col items-center ">
           <img
             src="public/img/mango.png"
             className="w-[60px] h-[60px] rounded-xl"
@@ -20,13 +20,13 @@ export default function Root() {
             <h1>MangSuyo</h1>
             <h1>Developer. Front Dev</h1>
           </div>
-          <div className="flex flex-col items-center mt-4 font-medium text-gray-500">
+          <div className="flex flex-col items-center mt-2 font-medium text-gray-500">
             <h2>Seoul, South Korea</h2>
             <h2>Sejong Univ</h2>
           </div>
           <div className="my-8 w-[35px] border-[0.5px] border-black"></div>
           <div className="w-[400px]">
-            <p className="leading-[1.2rem] text-[14px] md:text-[15px] text-gray text-center ">
+            <p className="leading-[1.2rem] text-[14px] md:text-[15px] text-gray text-center font-madimi ">
               I am studying computer engineering at Sejong University. <br /> I
               use React and Spring Boot to create web and app services. <br />I
               want to actively utilize technologies such as AI to find
