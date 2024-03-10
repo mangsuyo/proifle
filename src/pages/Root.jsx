@@ -2,10 +2,10 @@ import React from "react";
 import Nav from "../components/Nav";
 
 const items = [
-  { id: 0, title: "Portfolio", url: "public/img/portfolio_icon.jpeg" },
-  { id: 1, title: "Blog", url: "public/img/blog_icon.jpeg" },
-  { id: 2, title: "Github", url: "public/img/github_icon.png" },
-  { id: 3, title: "Instagram", url: "public/img/instagram_icon.jpeg" },
+  { id: 0, title: "Portfolio", url: "/img/portfolio_icon.jpeg" },
+  { id: 1, title: "Blog", url: "/img/blog_icon.jpeg" },
+  { id: 2, title: "Github", url: "/img/github_icon.png" },
+  { id: 3, title: "Instagram", url: "/img/instagram_icon.jpeg" },
 ];
 export default function Root() {
   return (
@@ -13,7 +13,7 @@ export default function Root() {
       <div className="py-28 flex flex-col items-center root-page">
         <div className="flex flex-col items-center parent-effect">
           <img
-            src="public/img/mango.png"
+            src="/img/mango.png"
             className="zero-to-one w-[60px] h-[60px] rounded-xl"
           />
           <div className="title font-karla mt-12 flex flex-col items-center font-bold text-xl ">
