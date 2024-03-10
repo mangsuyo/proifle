@@ -9,32 +9,30 @@ const items = [
 ];
 export default function Root() {
   return (
-    <div className="w-screen min-h-screen flex justify-center">
-      <div className="border-2 w-full max-w-screen-2xl flex flex-col items-center">
-        <div className="mt-20 flex flex-col items-center">
+    <div className="w-screen min-h-screen flex justify-center px-[7%] md:px-0 ">
+      <div className="py-28 flex flex-col items-center root-page">
+        <div className="flex flex-col items-center parent-effect">
           <img
             src="public/img/mango.png"
-            className="w-[60px] h-[60px] rounded-xl"
+            className="zero-to-one w-[60px] h-[60px] rounded-xl"
           />
-          <div className="flex flex-col items-center mt-6 font-semibold text-[18px]">
+          <div className="title font-karla mt-12 flex flex-col items-center font-bold text-xl ">
             <h1>MangSuyo</h1>
             <h1>Developer. Front Dev</h1>
           </div>
-          <div className="flex flex-col items-center mt-4 font-medium text-gray-500">
+          <div className="location flex flex-col items-center mt-3 font-bold text-[13px]">
             <h2>Seoul, South Korea</h2>
             <h2>Sejong Univ</h2>
           </div>
-          <div className="my-8 w-[35px] border-[0.5px] border-black"></div>
-          <div className="w-[400px]">
-            <p className="leading-[1.2rem] text-[14px] md:text-[15px] text-gray text-center ">
-              I am studying computer engineering at Sejong University. <br /> I
-              use React and Spring Boot to create web and app services. <br />I
-              want to actively utilize technologies such as AI to find
-              innovative solutions to social problems
-            </p>
-          </div>
+          <div className=" my-8 w-[35px] border-[0.5px] border-[rgba(0,0,0,0.5)]"></div>
+          <p className="font-karla  leading-[1.2rem] text-[12px] text-gray text-center font-semibold md:w-[400px] ">
+            I am studying computer engineering at Sejong Univ. <br /> I use
+            React and Spring Boot to create web and app <br />I want to actively
+            utilize technologies such as AI to find innovative solutions to
+            social problems
+          </p>
         </div>
-        <div className="w-[400px] mt-20 flex flex-col gap-4">
+        <div className="font-karla w-full mt-20 flex flex-col gap-3">
           {items.map((item) => (
             <Nav key={item.id} item={item} />
           ))}
