@@ -24,8 +24,8 @@ export default function Root() {
             <h2>Seoul, South Korea</h2>
             <h2>Sejong Univ</h2>
           </div>
-          <div className="my-8 w-[35px] border-[0.5px] border-[rgba(0,0,0,0.5)]"></div>
-          <p className="font-karla md:w-[400px] leading-[1.2rem] text-[12px] text-gray text-center font-semibold font-madimi ">
+          <div className=" my-8 w-[35px] border-[0.5px] border-[rgba(0,0,0,0.5)]"></div>
+          <p className="font-karla  leading-[1.2rem] text-[12px] text-gray text-center font-semibold md:w-[400px] ">
             I am studying computer engineering at Sejong Univ. <br /> I use
             React and Spring Boot to create web and app <br />I want to actively
             utilize technologies such as AI to find innovative solutions to

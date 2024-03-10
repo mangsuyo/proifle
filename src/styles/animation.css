@@ -57,12 +57,12 @@
 
 .root-page .title {
   animation: show-top-down 0.6s both;
-  animation-delay: 0.3s;
+  animation-delay: 0.2s;
 }
 
 .root-page .location {
   animation: show-top-down 0.8s both;
-  animation-delay: 0.6s;
+  animation-delay: 0.5s;
 }
 
 .root-page p {
