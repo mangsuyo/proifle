@@ -1,31 +1,35 @@
 import React from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { GoChevronRight } from "react-icons/go";
 import "../index.css";
 
-export default function Nav({ navItem, handleNavClick }) {
+export default function Nav({ navItem }) {
   const navigate = useNavigate();
-  const route = navItem.title.toLowerCase();
   const { url, title } = navItem;
-  console.log(route);
-  const handleNavRoute = () => {
-    if (route == "portfolio") {
-      navigate("/portfolio");
-    }
-    if (route == "instagram") {
-      navigate("/instagram");
+
+  const handleNavClick = (navTitle) => {
+    switch (navTitle) {
+      case "Blog":
+        window.open("https://velog.io/@mayo3610/posts");
+        break;
+      case "Github":
+        window.open("https://github.com/mangsuyo?tab=repositories");
+        break;
+      case "Portfolio":
+        navigate("/portfolio");
+        break;
+      default:
+        break;
     }
   };
+
   return (
     <div
       className="mouse-effect nav-effect"
       onClick={() => handleNavClick(title)}
     >
-      <h2
-        onClick={handleNavRoute}
-        className="flex items-center py-[18px] px-6 rounded-xl bg-[rgba(0,0,0,0.03)]"
-      >
-        <img src={url} className="w-[22px] h-[19px]" />
+      <h2 className="flex items-center py-[18px] px-6 rounded-xl bg-[rgba(0,0,0,0.03)]">
+        <img src={url} alt={title} className="w-[22px] h-[19px]" />
         <span className="ml-6 grow">{title}</span>
         <span className="chevron">
           <GoChevronRight />
